@@ -6,9 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 require 'rbconfig'
-if RbConfig::CONFIG['target_os'] =~ /darwin(1[0-3])/i
-  gem 'rb-fsevent', '<= 0.9.4'
-end
+
+gem 'rb-fsevent', '<= 0.9.4'
 
 gem 'rails', '~> 5.0.2'
 gem 'puma', '~> 3.0'
